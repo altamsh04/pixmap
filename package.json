@@ -1,9 +1,9 @@
 {
   "name": "pixmap",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "On-device image similarity search using CLIP + HNSW + SQLite",
+  "description": "On-device image similarity search",
   "main": "./src/engine.ts",
   "exports": {
     ".": {
