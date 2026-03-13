@@ -1,7 +1,6 @@
 {
-  "name": "pixmap",
+  "name": "pixmap-engine",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "On-device image similarity search",
   "main": "./src/engine.ts",
@@ -12,7 +11,7 @@
     }
   },
   "bin": {
-    "pixmap": "./dist/index.js"
+    "pixmap": "dist/index.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

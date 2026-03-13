@@ -5,7 +5,7 @@ Local image similarity search using CLIP embeddings, HNSW indexing, and SQLite. 
 ## Install
 
 ```bash
-npm install pixmap
+npm install pixmap-engine
 ```
 
 Requires Node.js 18+. Native modules (`sharp`, `better-sqlite3`, `hnswlib-node`) compile during install.
@@ -22,14 +22,15 @@ pixmap search ./query.jpg -k 10   # return more results
 pixmap list                       # show indexed images
 pixmap status                     # index stats
 ```
+
 ### Terminal View
-<img src="https://github.com/user-attachments/assets/0cfc7f0f-86b5-4a80-baaa-10feb28f811e" width="580" alt="Image"/>
+
 
 
 ### As a library
 
 ```typescript
-import { PixmapEngine } from "pixmap";
+import { PixmapEngine } from "pixmap-engine";
 
 const engine = new PixmapEngine({ dataDir: "./data" });
 await engine.init();
@@ -93,10 +94,10 @@ JPEG, PNG, WebP, BMP, GIF, AVIF, TIFF — anything Sharp can read.
 
 ## Dependencies
 
-- `[@xenova/transformers](https://github.com/xenova/transformers.js)` — runs the CLIP model locally via ONNX
-- `[sharp](https://github.com/lovell/sharp)` — image resize and preprocessing
-- `[hnswlib-node](https://github.com/yoshoku/hnswlib-node)` — approximate nearest neighbor index
-- `[better-sqlite3](https://github.com/WiseLibs/better-sqlite3)` — metadata storage
+- [`@xenova/transformers`](https://github.com/xenova/transformers.js) — runs the CLIP model locally via ONNX
+- [`sharp`](https://github.com/lovell/sharp) — image resize and preprocessing
+- [`hnswlib-node`](https://github.com/yoshoku/hnswlib-node) — approximate nearest neighbor index
+- [`better-sqlite3`](https://github.com/WiseLibs/better-sqlite3) — metadata storage
 
 ## License
 
