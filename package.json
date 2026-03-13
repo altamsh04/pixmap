@@ -1,6 +1,6 @@
 {
   "name": "pixmap-engine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "On-device image similarity search",
   "main": "./src/engine.ts",
