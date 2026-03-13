@@ -22,6 +22,9 @@ pixmap search ./query.jpg -k 10   # return more results
 pixmap list                       # show indexed images
 pixmap status                     # index stats
 ```
+### Terminal View
+<img src="https://github.com/user-attachments/assets/0cfc7f0f-86b5-4a80-baaa-10feb28f811e" width="580" alt="Image"/>
+
 
 ### As a library
 
